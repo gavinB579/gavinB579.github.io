@@ -1,0 +1,49 @@
+/* Heavy inspiration from w3schools.*/
+ nav
+{
+    position: fixed;
+    top : 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: rgb(37, 37, 37);
+    overflow-x: hidden;
+}
+
+nav a
+{
+    padding: 16px;
+    font-size:22px;
+    color: rgb(185, 185, 185);
+    display: block;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color:rgb(255, 255, 255);
+}
+
+body
+{
+    padding-left: 200px;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+figcaption
+{
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(68, 68, 68);
+    margin-bottom: 16px;
+}
+
+img
+{
+    max-width: 990px;
+    width: 100%;
+    height: auto;
+}

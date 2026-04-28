@@ -1,2 +1,2 @@
-# gavinB579.github.io
-Website containing information about me and projects I have done. 
+# my-website
+Website containing info about me
