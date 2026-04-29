@@ -9,10 +9,10 @@
     height: 100px;
     width: 100%;
     background-color: rgb(247, 201, 141);
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-nav a
+nav a, .navDropdownOptions a
 {
     padding: 25px;
     font-size:35px;
@@ -24,7 +24,7 @@ nav a
 
 nav a:hover, .navDropdown:hover, .navDropdownOptions a:hover
 {
-    color:rgb(53, 53, 53);
+    background-color:rgb(243, 1, 1);
 }
 
 .navDropdown
@@ -37,21 +37,15 @@ nav a:hover, .navDropdown:hover, .navDropdownOptions a:hover
 {
     display: none;
     position: absolute;
-    background-color: burlywood;
+    background-color: rgb(0, 255, 98);
     min-width: 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-/* Formatting for anchor links in navbar dropdown */
-.navDropdownOptions a
+.navDropdown:hover .navDropdownOptions
 {
-    padding: 20px;
-    font-size:35px;
-    color: rgb(0, 0, 0);
-    justify-content: center;
-    align-content: center;
-    text-decoration: none;
+    display: block;
 }
 
 body
