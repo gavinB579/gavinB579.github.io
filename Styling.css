@@ -3,10 +3,10 @@
 {
     position: fixed;
     justify-content: center;
-    padding:15px;
+    align-content: center;
     top : 0;
     left: 0;
-    height: 200px;
+    height: 100px;
     width: 100%;
     background-color: rgb(247, 201, 141);
     overflow-x: hidden;
@@ -14,10 +14,11 @@
 
 nav a
 {
-    padding: 16px;
-    font-size:40px;
+    padding: 25px;
+    font-size:35px;
     color: rgb(0, 0, 0);
-    float: left;
+    justify-content: center;
+    align-content: center;
     text-decoration: none;
 }
 
@@ -45,10 +46,11 @@ nav a:hover, .navDropdown:hover, .navDropdownOptions a:hover
 /* Formatting for anchor links in navbar dropdown */
 .navDropdownOptions a
 {
-    padding: 16px;
-    font-size:40px;
+    padding: 20px;
+    font-size:35px;
     color: rgb(0, 0, 0);
-    display: block;
+    justify-content: center;
+    align-content: center;
     text-decoration: none;
 }
 
