@@ -4,6 +4,7 @@
     position: fixed;
     justify-content: center;
     align-content: center;
+    float:
     top : 0;
     left: 0;
     height: 75px;
@@ -16,10 +17,8 @@ nav a, .navDropdownOptions a
 {
     padding: 25px;
     font-size:35px;
-    float: left;
-    text-align: center;
-    text-decoration: none;
     color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 nav a:hover, .navDropdown:hover, .navDropdownOptions a:hover
