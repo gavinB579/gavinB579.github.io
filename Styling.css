@@ -8,8 +8,8 @@
     left: 0;
     height: 100px;
     width: 100%;
-    background-color: rgb(247, 201, 141);
-    overflow-y: hidden;
+    background-color: rgb(255, 196, 118);
+    overflow: hidden;
 }
 
 nav a, .navDropdownOptions a
@@ -17,14 +17,12 @@ nav a, .navDropdownOptions a
     padding: 25px;
     font-size:35px;
     color: rgb(0, 0, 0);
-    justify-content: center;
-    align-content: center;
     text-decoration: none;
 }
 
 nav a:hover, .navDropdown:hover, .navDropdownOptions a:hover
 {
-    background-color:rgb(243, 1, 1);
+    background-color:rgb(224, 166, 89);
 }
 
 .navDropdown
@@ -53,7 +51,7 @@ body
     padding-left: 200px;
     text-align: center;
     font-size: 24px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 240, 220);
     color: rgb(0, 0, 0);
 }
 
