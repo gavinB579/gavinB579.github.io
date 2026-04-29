@@ -31,6 +31,15 @@ nav a:hover, .navDropdown:hover, .navDropdownOptions a:hover
     overflow: hidden;
 }
 
+.navDropdownLink
+{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+}
+
 .navDropdownOptions
 {
     display: none;
