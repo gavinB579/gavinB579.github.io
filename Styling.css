@@ -2,6 +2,10 @@
  nav
 {
     position: fixed;
+    justify-content: center;
+    align-content: center;
+    top : 0;
+    left: 0;
     height: 75px;
     width: 100%;
     background-color: rgb(255, 196, 118);
@@ -12,8 +16,10 @@ nav a, .navDropdownOptions a
 {
     padding: 25px;
     font-size:35px;
-    color: rgb(0, 0, 0);
+    float: left;
+    text-align: center;
     text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 nav a:hover, .navDropdown:hover, .navDropdownOptions a:hover
