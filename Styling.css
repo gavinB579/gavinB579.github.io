@@ -2,6 +2,7 @@
  nav
 {
     position: fixed;
+    float: left;
     top : 0;
     left: 0;
     height: 200px;
@@ -13,13 +14,13 @@
 nav a
 {
     padding: 16px;
-    font-size:22px;
+    font-size:44px;
     color: rgb(0, 0, 0);
     float: left;
     text-decoration: none;
 }
 
-nav a:hover .navDropdown:hover .navDropdownOptions a:hover
+nav a:hover, .navDropdown:hover, .navDropdownOptions a:hover
 {
     color:rgb(53, 53, 53);
 }
@@ -44,7 +45,7 @@ nav a:hover .navDropdown:hover .navDropdownOptions a:hover
 .navDropdownOptions a
 {
     padding: 16px;
-    font-size:22px;
+    font-size:44px;
     color: rgb(0, 0, 0);
     display: block;
     text-decoration: none;
