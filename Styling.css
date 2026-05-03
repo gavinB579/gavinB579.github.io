@@ -75,11 +75,16 @@ nav a:hover
 
 body
 {
-    padding: 0px 100px;
     text-align: center;
     font-size: 25px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+body p 
+{
+    padding: 0px 100px;
 }
 
 figcaption
@@ -104,19 +109,48 @@ img
 
 .downloadProjectSection
 {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
     background-color: #383bda;
     color:#ffffff;
     border-top: 1px solid #000000;
+    margin-top: 50px;
     width: 100%;
-    left: 0;
 }
 
-.downloadProjectSectionText
+.downloadProjectSection h2
+{
+    margin-bottom: 0;
+}
+
+.splitContainer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.downloadProjectSectionLeft, .downloadProjectSectionRight
 {
     flex: 1;
 }
+
+.downloadProjectSectionRight button
+{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.downloadProjectSectionRight button:hover
+{
+    border-color: #333435;
+    color: #191dd4;
+    text-decoration: underline;
+}
+
+

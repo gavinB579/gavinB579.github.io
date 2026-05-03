@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+      <link rel = "stylesheet" href = "../../Styling.css">
+      <title>
+          Project 1 - Java GUI
+      </title>
+    </head>
+
+  <body>  
+    <nav>
+      <a  href="../../index.html" > Home</a>
+
+      <div class="navDropdown">
+        <a href="javaProjects.html" > <b>Java Projects</b></a>
+        <div class="navDropdownOptions">
+          <a href="../../projects/java/javaGUIEventDrivenProgramming.html"> Event-Driven Programming</a>
+          <a href="../../projects/java/javaThreadProgramming.html"> <b>Synchronized Threads Using Locks Showcase</b></a>
+          <a href="../../projects/java/javaTwoTierServerApp.html"> Two-Tier Server Application</a>
+          <a href="../../projects/java/javaThreeTierWebApp.html"> Three-Tier Web Application</a>
+        </div>
+      </div>
+
+      <div class="navDropdown">
+        <a href="cProjects.html"> C Projects</a>
+        <div class="navDropdownOptions">
+          <a href="../../projects/c/dynamicMemoryShowcase.html"> Dynamic Memory Allocation Showcase</a>
+          <a href="../../projects/c/mergeSortProject.html"> Merge Sort Algorithm Showcase</a>
+          <a href="../../projects/c/binarySearchTreeProject.html"> Binary Search Tree Showcase</a>
+          <a href="../../projects/c/hashTableProject.html"> Hash Table Showcase</a>
+        </div>
+      </div>
+
+      <div class="navDropdown">
+        <a href="fullStackProjects.html"> Full Stack Projects</a>
+        <div class="navDropdownOptions">
+          <a href="../../projects/fullStack/mernStack.html"> Mern Stack Application</a>
+          <a href="../../projects/fullStack/wampStack.html"> WAMP Stack Application</a>
+        </div>
+      </div>
+
+      <div class="navDropdown">
+        <a href="ciscoProjects.html"> Cisco Packet Tracer Projects</a>
+        <div class="navDropdownOptions">
+          <a href="../../projects/ciscoPacketTracer/ciscoSwitchConfig.html"> Switch Configuration</a>
+          <a href="../../projects/ciscoPacketTracer/ciscoVLANConfig.html"> VLAN Configuration</a>
+          <a href="../../projects/ciscoPacketTracer/ciscoMultipleVLANConfig.html"> Multiple VLANs Configuration</a>
+          <a href="../../projects/ciscoPacketTracer/ciscoMultipleNetworks.html"> Multiple Networks Configuration</a>
+          <a href="../../projects/ciscoPacketTracer/ciscoIPv6Config.html"> IPv6 Configuration</a>
+        </div>
+      </div>
+
+      <div class="navDropdown">
+        <a href="sqlProjects.html"> SQL Projects</a>
+        <div class="navDropdownOptions">
+          <a href="../../projects/sql/finalizedSQLDatabase.html"> Finalized SQL Database</a>
+          <a href="../../projects/sql/inProgressSQLDatabase.html"> Prototype SQL Database Versions</a>
+        </div>
+      </div>
+
+      <a href = "contact.html" > Contact </a>
+
+      <a href = "about.html" > About </a>
+   </nav>
+
+      <section class="topOfContent">
+        <h1>
+          Java Thread Programming - Synchronized and Cooperating Threads Using Locks
+        </h1>
+      </section>
+        
+        <p>
+          This project was a display in using Java to create and utilize synchronized threads. It simulates banking transactions between two bank account. The programs runs autonomously without user input (apart from starting it), and can take multiple actions.  
+          It may deposit money into either of the two accounts, withdraw money from either account if they have enough balance, transfer money between accounts if there is enough balance, flag transfers if they are too high, and run internal/external audits. 
+          Certain actions like transferring might be cancelled if both accounts are occupied. 
+        </p>
+          <figure>
+          <img src = "../../assets/images/java/javaBankSimulation.png" alt = "A banking simulation displaying a log of data and transactions." style = "text-align: left; border: 3px solid black; max-width: 897px;">
+          <figcaption> A display of the banking simulation that displays deposits, withdrawals, transfers, flagged transactions, and failed attempts.</figcaption>
+          </figure>
+        <p>
+          This project taught me a lot. It gave me valuable experience and knowledge for working with threads and how threads work as a whole. I learned how locking works, and how to send out a signal to threads to lock/unlock them.
+          I also learned about intetional sleep timers to only allow threads to perform an action every so often and outputting specific information with timestamps to files. This helped me become a better and more professional programmer, learning more tools and tactics.
+        </p>
+
+    <section class="downloadProjectSection">
+      <h2><u>Project File(s)</u></h2>
+      <div class="splitContainer">
+        <div class="downloadProjectSectionLeft">
+         <p> 
+            This download contains a zip of my submission, including the source code and 
+            a Microsoft Word document containing more screenshots of the program.
+            This was originally submitted as schoolwork, so the name of the source code is Project 2. 
+          </p>
+        </div>
+
+        <div class="downloadProjectSectionRight">
+          <a href="../../sourceCode/java/javaThreadBankingSimulation.zip" download="threadBankingSimulation">
+            <button class="downloadButton"> Download (.zip) </button>
+          </a>
+        </div>
+      </div>
+        
+    </section>
+  </body>
+</html>

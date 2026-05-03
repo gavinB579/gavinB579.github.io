@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+      <link rel = "stylesheet" href = "../../Styling.css">
+      <title>
+          Project 1 - Java GUI
+      </title>
+    </head>
+
+  <body>  
+    <nav>
+      <a  href="../../index.html" > Home</a>
+
+      <div class="navDropdown">
+        <a href="javaProjects.html" > <b>Java Projects</b></a>
+        <div class="navDropdownOptions">
+          <a href="../../projects/java/javaGUIEventDrivenProgramming.html"> Event-Driven Programming</a>
+          <a href="../../projects/java/javaThreadProgramming.html"> Synchronized Threads Using Locks Showcase</a>
+          <a href="../../projects/java/javaTwoTierServerApp.html"> <b>Two-Tier Server Application</b></a>
+          <a href="../../projects/java/javaThreeTierWebApp.html"> Three-Tier Web Application</a>
+        </div>
+      </div>
+
+      <div class="navDropdown">
+        <a href="cProjects.html"> C Projects</a>
+        <div class="navDropdownOptions">
+          <a href="../../projects/c/dynamicMemoryShowcase.html"> Dynamic Memory Allocation Showcase</a>
+          <a href="../../projects/c/mergeSortProject.html"> Merge Sort Algorithm Showcase</a>
+          <a href="../../projects/c/binarySearchTreeProject.html"> Binary Search Tree Showcase</a>
+          <a href="../../projects/c/hashTableProject.html"> Hash Table Showcase</a>
+        </div>
+      </div>
+
+      <div class="navDropdown">
+        <a href="fullStackProjects.html"> Full Stack Projects</a>
+        <div class="navDropdownOptions">
+          <a href="../../projects/fullStack/mernStack.html"> Mern Stack Application</a>
+          <a href="../../projects/fullStack/wampStack.html"> WAMP Stack Application</a>
+        </div>
+      </div>
+
+      <div class="navDropdown">
+        <a href="ciscoProjects.html"> Cisco Packet Tracer Projects</a>
+        <div class="navDropdownOptions">
+          <a href="../../projects/ciscoPacketTracer/ciscoSwitchConfig.html"> Switch Configuration</a>
+          <a href="../../projects/ciscoPacketTracer/ciscoVLANConfig.html"> VLAN Configuration</a>
+          <a href="../../projects/ciscoPacketTracer/ciscoMultipleVLANConfig.html"> Multiple VLANs Configuration</a>
+          <a href="../../projects/ciscoPacketTracer/ciscoMultipleNetworks.html"> Multiple Networks Configuration</a>
+          <a href="../../projects/ciscoPacketTracer/ciscoIPv6Config.html"> IPv6 Configuration</a>
+        </div>
+      </div>
+
+      <div class="navDropdown">
+        <a href="sqlProjects.html"> SQL Projects</a>
+        <div class="navDropdownOptions">
+          <a href="../../projects/sql/finalizedSQLDatabase.html"> Finalized SQL Database</a>
+          <a href="../../projects/sql/inProgressSQLDatabase.html"> Prototype SQL Database Versions</a>
+        </div>
+      </div>
+
+      <a href = "contact.html" > Contact </a>
+
+      <a href = "about.html" > About </a>
+   </nav>
+
+      <section class="topOfContent">
+        <h1>
+          Java Two-Tier Server Application - Using MySQL and <abbr title="Java Database Connectivity"> JDBC </abbr>
+        </h1>
+      </section>
+        
+        <p>
+          This project required the use of MySQL and JDBC. The goal was to create a GUI that allowed for user input and was connected to an SQL backend. 
+          JDBC was used to connect the Java GUI front-end with the SQL Database. Depending on the user permissions, they could interact with the GUI in different ways and perform
+          different SQL commands. There is the root user, client-1, client-2, and the accountant. 
+        </p>
+          <figure>
+          <img src = "../../assets/images/java/javaGUITwoTierApplication.png" alt = "A 3-block Java GUI displaying a 'Connection Details' box, 'SQL Command' box, and an 'SQL Execution Result' box." style = "text-align: left; border: 3px solid black; max-width: 897px;">
+          <figcaption> A display of the Java GUI two-tier application logged in as "Root". The user is selecting all entries from the "riders" SQL database.</figcaption>
+          </figure>
+        <p>
+          This project builds on my GUI Event Driven Programming project. It follows the same design language for GUI creation, including the use of action listeners and event handlers, but adds more.
+          It incorporates the use of a MySQL backend database, and relies on JDBC to connect them together. This was challenging, but it introduced me to two-tier server architecture that
+          allowed me to seamlessly connect the front-end and back-end together. 
+        </p>
+
+    <section class="downloadProjectSection">
+      <h2><u>Project File(s)</u></h2>
+      <div class="splitContainer">
+        <div class="downloadProjectSectionLeft">
+         <p> 
+            This download contains a zip of my submission, including the source code and 
+            a Microsoft Word document containing more screenshots of the program.
+            This was originally submitted as schoolwork, so the name of the source code is Project 3. 
+            <br><br>
+            <u><b>NOTE</b></u>: I have included some of the additional SQL files written by my professor, Professor Mark Llewellyn. This is not my work but will be required
+            for the GUI to function in conjuction with the MySQL database. It also includes lists of commands each user can type to verify results. 
+          </p>
+        </div>
+
+        <div class="downloadProjectSectionRight">
+          <p> My Source Code:</p>
+          <a href="../../sourceCode/java/javaTwoTierServer.zip" download="twoTierServer">
+            <button class="downloadButton"> Download (.zip) </button>
+          </a>
+          <br><br>
+          <p> Mark Llewellyn's SQL Files:</p>
+            <a href="../../sourceCode/java/javaTwoTierServerMarkLlewellynSQL.zip" download="twoTierServerSQL">
+                <button class="downloadButton"> Download (.zip) </button>
+            </a>
+        </div>
+      </div>
+        
+    </section>
+  </body>
+</html>
