@@ -70,24 +70,19 @@
       </section>
         
         <p>
-          The goal of this project was to 
-          
-          This project was a simulation of a theater seating reservation system. The program utilized dynamic memory allocation to book seats and lookup reservations. It would take in a command
-          (BUY or LOOKUP), and work from there. If the command was BUY, it would ask for a row, start seat, end seat, and name. If none of those seats in that row were taken, it would book successfully.
-          If the command was LOOKUP, it would ask for a row and a seat number, and if the seat was taken, it would return the name of the reservation. 
+          I did this project a few years ago as a school assignment, and I do not have the original project description, so I will just give a general overview of the project and my experience with it.
+          The main goal of this project was to implement a merge sort algorithm in C, and use it to sort data, mainly focusing on runtimes. The data we were sorting was a list of high precision angles.
         </p>
           <figure>
-          <img src = "../../assets/images/c/cTheaterSeatingReservation.png" alt = "A command window view of inputs and outputs manipulating the program." style = "text-align: left; border: 3px solid black; max-width: 897px;">
-          <figcaption> A display of the theatre reservation system in action. It showcases basic functionality of the program.</figcaption>
+          <img src = "../../assets/images/c/cMergeSortProjectResults.png" alt = "A window view of the final results of multiple tests." style = "text-align: left; border: 3px solid black; max-width: 897px;">
+          <figcaption> A display of the the results from multiple test runs. It displays the performance of the merge sort algorithm under different conditions, mainly quick runtimes even with larger datasets.
+                       The tests would time out if they ran for over 4 seconds.
+          </figcaption>
           </figure>
         <p> 
-          
-          
-          This was my first foray into dynamic memory allocation, and a tough learning experience working with pointers, structs and dynamic memory. I had to learn how to use malloc, free, 
-          and how to properly manage memory in a C program. As a result, there is a small memory leak in the program that I was unable to track down at the time. 
-          In my opinion, the pointers were the most difficult part of this project, and I had to do a lot of research and trial-and-error to get them working properly. 
-          I also had to learn how to use structs to create a linked list for the reservations, which was a new concept for me. I do believe it was a very important foundation for my understanding 
-          of higher level C programming than what I had been doing before.
+          This project was mainly a learning experience in using a merge sort algorithm with an acceptable Big O runtime, and handling high precision data. It also built off of some of the concepts
+          I learned in my previous C projects, mainly dynamic memory allocation and pointers. A big challenge of this project was making merge sort run in the alloted Big O runtime.
+          Additionally, it was my first time really working with sorting algorithms, and I had to do a lot of research to understand how merge sort worked and how to implement it in C.
         </p>
 
  <section class="downloadProjectSection">
@@ -95,13 +90,12 @@
       <div class="splitContainer">
         <div class="downloadProjectSectionLeft">
          <p> 
-            This download contains a zip of my submission, including the source code of my program.
-            This was originally submitted as schoolwork, so the name of the source code is Assignment 1. 
+            This download contains a zip of my submission, which is the main.c file in this case.  
           </p>
         </div>
 
         <div class="downloadProjectSectionRight">
-          <a href="../../sourceCode/c/cDynamicMemoryTheatreSimulation.zip" download="theatreSimulation">
+          <a href="../../sourceCode/c/cMergeSortShowcase.zip" download="mergeSortShowcase">
             <button class="downloadButton"> Download (.zip) </button>
           </a>
         </div>
