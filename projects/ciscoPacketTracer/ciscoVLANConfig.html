@@ -70,7 +70,9 @@
       </section>
         
         <p>
-          The project followed my previous one - switch configuration. It builds off the skills from that project to create two separate VLANs that connect to each other virtually. 
+          The project followed my previous one - switch configuration. It builds off the skills from that project to create two separate VLANs that connect to each other virtually. The parameters of this project 
+          require that there be two separate network switches with 4 PCs connected to each switch. The switches are connected to eachother using a trunk port, and the PCs all use the same subnet. To accomplish this, 
+          I had to utilize trunk ports, VLAN tagging, subnetting, and more. The PCs on each switch are in different VLANs, but they can still communicate with each other because of the trunk port between the switches.
         </p>
           <figure>
           <img src = "../../assets/images/ciscoPacketTracer/vlanConfig/networkTopology.png" alt = "An image showing multiple devices connected together." style = "text-align: left; border: 3px solid black; max-width: 897px;">
@@ -372,7 +374,9 @@
             </pre>
           </div>
         <p> 
- 
+          This project was a great way to build on the skills I learned in my previous project, and it also taught me a lot about VLANs and trunking. It also helped me understand the importance of a VLAN, 
+          as it allows for the creation of separate virtual networks within the same physical network. This can be useful for security, organization, and flexibility. The most difficult part of this project for me 
+          was the trunking part of it, even with the resources at my disposal. This is not to mention the variability of the <abbr title="Command Line Interface">CLI</abbr> commands. 
         </p>
 
  <section class="downloadProjectSection">
