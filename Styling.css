@@ -163,6 +163,13 @@ pre
     font-family: consolas, monospace;
     max-height: 400px;
     max-width: 50%;
+}
+
+.log-container
+{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
