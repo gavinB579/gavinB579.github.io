@@ -153,4 +153,14 @@ img
     text-decoration: underline;
 }
 
+pre
+{
+    text-align: left;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    border: 1px solid #000000;
+    overflow-x: auto;
+    font-family: consolas, monospace;
+    max-height: 400px;
+}
 

@@ -70,20 +70,306 @@
       </section>
         
         <p>
-
+          The project followed my previous one - switch configuration. It builds off the skills from that project to create two separate VLANs that connect to each other virtually. 
         </p>
           <figure>
           <img src = "../../assets/images/ciscoPacketTracer/vlanConfig/networkTopology.png" alt = "An image showing multiple devices connected together." style = "text-align: left; border: 3px solid black; max-width: 897px;">
           <figcaption> A display of the network topology.</figcaption>
           </figure>
-          <figure>
-          <img src = "../../assets/images/ciscoPacketTracer/vlanConfig/lanAConfig.png" alt = "A CLI view of the switch A configuration results." style = "text-align: left; border: 3px solid black; max-width: 897px;">
-          <figcaption> A view of the switch A configuration results.</figcaption>
-          </figure>
-          <figure>
-          <img src = "../../assets/images/ciscoPacketTracer/vlanConfig/lanBConfig.png" alt = "A CLI view of the switch B configuration results." style = "text-align: left; border: 3px solid black; max-width: 897px;">
-          <figcaption> A view of the switch B configuration results.</figcaption>
-          </figure>
+           <div class="log-container">
+            <h2>LAN A Configuration Log</h2>
+            <pre>
+              LAN-SwitchA#show run
+              Building configuration...
+
+              Current configuration : 1514 bytes
+              !
+              version 12.2(37)SE1
+              no service timestamps log datetime msec
+              no service timestamps debug datetime msec
+              no service password-encryption
+              !
+              hostname LAN-SwitchA
+              !
+              !
+              no profinet
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              spanning-tree mode pvst
+              !
+              !
+              !
+              !
+              !
+              !
+              interface FastEthernet0/1
+              switchport access vlan 10
+              !
+              interface FastEthernet0/2
+              switchport access vlan 10
+              !
+              interface FastEthernet0/3
+              switchport access vlan 20
+              !
+              interface FastEthernet0/4
+              switchport access vlan 20
+              !
+              interface FastEthernet0/5
+              shutdown
+              !
+              interface FastEthernet0/6
+              shutdown
+              !
+              interface FastEthernet0/7
+              shutdown
+              !
+              interface FastEthernet0/8
+              shutdown
+              !
+              interface FastEthernet0/9
+              shutdown
+              !
+              interface FastEthernet0/10
+              shutdown
+              !
+              interface FastEthernet0/11
+              shutdown
+              !
+              interface FastEthernet0/12
+              shutdown
+              !
+              interface FastEthernet0/13
+              shutdown
+              !
+              interface FastEthernet0/14
+              shutdown
+              !
+              interface FastEthernet0/15
+              shutdown
+              !
+              interface FastEthernet0/16
+              shutdown
+              !
+              interface FastEthernet0/17
+              shutdown
+              !
+              interface FastEthernet0/18
+              shutdown
+              !
+              interface FastEthernet0/19
+              shutdown
+              !
+              interface FastEthernet0/20
+              shutdown
+              !
+              interface FastEthernet0/21
+              shutdown
+              !
+              interface FastEthernet0/22
+              shutdown
+              !
+              interface FastEthernet0/23
+              shutdown
+              !
+              interface FastEthernet0/24
+              switchport trunk encapsulation dot1q
+              switchport mode trunk
+              !
+              interface GigabitEthernet0/1
+              !
+              interface GigabitEthernet0/2
+              !
+              interface Vlan1
+              no ip address
+              shutdown
+              !
+              ip classless
+              !
+              ip flow-export version 9
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              line con 0
+              !
+              line aux 0
+              !
+              line vty 0 4
+              login
+              !
+              !
+              !
+              !
+              end
+            </pre>
+            <h2>LAN B Configuration Log</h2>
+            <pre>
+              LAN-SwitchB#show run
+              Building configuration...
+
+              Current configuration : 1514 bytes
+              !
+              version 12.2(37)SE1
+              no service timestamps log datetime msec
+              no service timestamps debug datetime msec
+              no service password-encryption
+              !
+              hostname LAN-SwitchB
+              !
+              !
+              no profinet
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              spanning-tree mode pvst
+              !
+              !
+              !
+              !
+              !
+              !
+              interface FastEthernet0/1
+              switchport access vlan 30
+              !
+              interface FastEthernet0/2
+              switchport access vlan 30
+              !
+              interface FastEthernet0/3
+              switchport access vlan 40
+              !
+              interface FastEthernet0/4
+              switchport access vlan 40
+              !
+              interface FastEthernet0/5
+              shutdown
+              !
+              interface FastEthernet0/6
+              shutdown
+              !
+              interface FastEthernet0/7
+              shutdown
+              !
+              interface FastEthernet0/8
+              shutdown
+              !
+              interface FastEthernet0/9
+              shutdown
+              !
+              interface FastEthernet0/10
+              shutdown
+              !
+              interface FastEthernet0/11
+              shutdown
+              !
+              interface FastEthernet0/12
+              shutdown
+              !
+              interface FastEthernet0/13
+              shutdown
+              !
+              interface FastEthernet0/14
+              shutdown
+              !
+              interface FastEthernet0/15
+              shutdown
+              !
+              interface FastEthernet0/16
+              shutdown
+              !
+              interface FastEthernet0/17
+              shutdown
+              !
+              interface FastEthernet0/18
+              shutdown
+              !
+              interface FastEthernet0/19
+              shutdown
+              !
+              interface FastEthernet0/20
+              shutdown
+              !
+              interface FastEthernet0/21
+              shutdown
+              !
+              interface FastEthernet0/22
+              shutdown
+              !
+              interface FastEthernet0/23
+              shutdown
+              !
+              interface FastEthernet0/24
+              switchport trunk encapsulation dot1q
+              switchport mode trunk
+              !
+              interface GigabitEthernet0/1
+              !
+              interface GigabitEthernet0/2
+              !
+              interface Vlan1
+              no ip address
+              shutdown
+              !
+              ip classless
+              !
+              ip flow-export version 9
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              line con 0
+              !
+              line aux 0
+              !
+              line vty 0 4
+              login
+              !
+              !
+              !
+              !
+              end
+            </pre>
+          </div>
         <p> 
  
         </p>

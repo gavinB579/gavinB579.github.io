@@ -79,10 +79,133 @@
           <img src = "../../assets/images/ciscoPacketTracer/switchConfig/networkTopology.png" alt = "An image showing multiple devices connected together." style = "text-align: left; border: 3px solid black; max-width: 897px;">
           <figcaption> A display of the network topology.</figcaption>
           </figure>
-          <figure>
-          <img src = "../../assets/images/ciscoPacketTracer/switchConfig/cliResults.png" alt = "A CLI view of the switch configuration results." style = "text-align: left; border: 3px solid black; max-width: 897px;">
-          <figcaption> A view of the switch configuration results.</figcaption>
-          </figure>
+           <div class="log-container">
+            <h2>Switch Configuration Log</h2>
+            <pre>
+              LAN-Switch#show run
+              Building configuration...
+
+              Current configuration : 1250 bytes
+              !
+              version 12.2(37)SE1
+              no service timestamps log datetime msec
+              no service timestamps debug datetime msec
+              no service password-encryption
+              !
+              hostname LAN-Switch
+              !
+              !
+              no profinet
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              spanning-tree mode pvst
+              !
+              !
+              !
+              !
+              !
+              !
+              interface FastEthernet0/1
+              switchport mode access
+              !
+              interface FastEthernet0/2
+              switchport mode access
+              !
+              interface FastEthernet0/3
+              switchport mode access
+              !
+              interface FastEthernet0/4
+              !
+              interface FastEthernet0/5
+              !
+              interface FastEthernet0/6
+              !
+              interface FastEthernet0/7
+              !
+              interface FastEthernet0/8
+              !
+              interface FastEthernet0/9
+              !
+              interface FastEthernet0/10
+              !
+              interface FastEthernet0/11
+              !
+              interface FastEthernet0/12
+              !
+              interface FastEthernet0/13
+              !
+              interface FastEthernet0/14
+              !
+              interface FastEthernet0/15
+              !
+              interface FastEthernet0/16
+              !
+              interface FastEthernet0/17
+              !
+              interface FastEthernet0/18
+              !
+              interface FastEthernet0/19
+              !
+              interface FastEthernet0/20
+              !
+              interface FastEthernet0/21
+              !
+              interface FastEthernet0/22
+              !
+              interface FastEthernet0/23
+              !
+              interface FastEthernet0/24
+              !
+              interface GigabitEthernet0/1
+              switchport mode access
+              !
+              interface GigabitEthernet0/2
+              !
+              interface Vlan1
+              no ip address
+              shutdown
+              !
+              ip classless
+              !
+              ip flow-export version 9
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              line con 0
+              !
+              line aux 0
+              !
+              line vty 0 4
+              login
+              !
+              !
+              !
+              !
+              end
+            </pre>
+          </div>
         <p> 
             I did not struggle much with this project, as I had experience, albeit limited, with Cisco Packet Tracer. My professor provided us with a lot of resources to help us complete the project, 
             including a detailed project description, a video tutorial, and a sample file with the network topology already created. I used all of these resources to complete the project. The most confusing part 
