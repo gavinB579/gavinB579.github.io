@@ -8,80 +8,29 @@
     </head>
 
   <body>  
-    <nav>
-      <a  href="../../index.html" > Home</a>
 
-      <div class="navDropdown">
-        <a href="javaProjects.html" > Java Projects</a>
-        <div class="navDropdownOptions">
-          <a href="../../projects/java/javaGUIEventDrivenProgramming.html"> Event-Driven Programming</a>
-          <a href="../../projects/java/javaThreadProgramming.html"> Synchronized Threads Using Locks Showcase</a>
-          <a href="../../projects/java/javaTwoTierServerApp.html"> Two-Tier Server Application</a>
-          <a href="../../projects/java/javaThreeTierWebApp.html"> Three-Tier Web Application</a>
-        </div>
-      </div>
+    <div id="navbar"></div>
+    <script src="assets/navbar/navbarJS.js"></script>
 
-      <div class="navDropdown">
-        <a href="cProjects.html"> C Projects</a>
-        <div class="navDropdownOptions">
-          <a href="../../projects/c/dynamicMemoryShowcase.html"> Dynamic Memory Allocation Showcase</a>
-          <a href="../../projects/c/mergeSortProject.html"> Merge Sort Algorithm Showcase</a>
-          <a href="../../projects/c/binarySearchTreeProject.html"> Binary Search Tree Showcase</a>
-          <a href="../../projects/c/hashTableProject.html"> Hash Table Showcase</a>
-        </div>
-      </div>
-
-      <div class="navDropdown">
-        <a href="fullStackProjects.html"> Full Stack Projects</a>
-        <div class="navDropdownOptions">
-          <a href="../../projects/fullStack/mernStack.html"> Mern Stack Application</a>
-          <a href="../../projects/fullStack/wampStack.html"> WAMP Stack Application</a>
-        </div>
-      </div>
-
-      <div class="navDropdown">
-        <a href="ciscoProjects.html"> <b>Cisco Packet Tracer Projects</b></a>
-        <div class="navDropdownOptions">
-          <a href="../../projects/ciscoPacketTracer/ciscoSwitchConfig.html"> <b>Switch Configuration</b></a>
-          <a href="../../projects/ciscoPacketTracer/ciscoVLANConfig.html"> VLAN Configuration</a>
-          <a href="../../projects/ciscoPacketTracer/ciscoMultipleVLANConfig.html"> Multiple VLANs Configuration</a>
-          <a href="../../projects/ciscoPacketTracer/ciscoMultipleNetworks.html"> Multiple Networks Configuration</a>
-          <a href="../../projects/ciscoPacketTracer/ciscoIPv6Config.html"> IPv6 Configuration</a>
-        </div>
-      </div>
-
-      <div class="navDropdown">
-        <a href="sqlProjects.html"> SQL Projects</a>
-        <div class="navDropdownOptions">
-          <a href="../../projects/sql/finalizedSQLDatabase.html"> Finalized SQL Database</a>
-          <a href="../../projects/sql/inProgressSQLDatabase.html"> Prototype SQL Database Versions</a>
-        </div>
-      </div>
-
-      <a href = "contact.html" > Contact </a>
-
-      <a href = "about.html" > About </a>
-   </nav>
-
-      <section class="topOfContent">
-        <h1>
-          Cisco Packet Tracer - Switch Configuration 
-        </h1>
-      </section>
+    <section class="topOfContent">
+      <h1>
+        Cisco Packet Tracer - Switch Configuration 
+      </h1>
+    </section>
         
-        <p>
-            This project was completed as part of a course I took on computer networking. It is the first real project of the series of Cisco Packet Tracer projects, and thus focuses on the basics of switch configuration. 
-            In this project, I had to configure a network topology, and then configure the switch in the network to allow for communication between the different devices, all with the end goal of creating a 
-            functional <abbr title="Local Area Network">LAN</abbr>. This network configuration had to have at least 5 devices (3 PCs, 1 switch, and 1 router), and it had to be formatted in a specific way. 
-            The computers must be hooked up to the switch only, and the switch must be hooked up to the router. The PCs must be able to communicate with each other, and they must also be able to communicate with the router.
-        </p>
-          <figure>
-          <img src = "../../assets/images/ciscoPacketTracer/switchConfig/networkTopology.png" alt = "An image showing multiple devices connected together." style = "text-align: left; border: 3px solid black; max-width: 897px;">
-          <figcaption> A display of the network topology.</figcaption>
-          </figure>
-           <div class="log-container">
-            <h4 class="log-container-title">Switch Configuration Log</h4>
-            <pre>
+      <p>
+          This project was completed as part of a course I took on computer networking. It is the first real project of the series of Cisco Packet Tracer projects, and thus focuses on the basics of switch configuration. 
+          In this project, I had to configure a network topology, and then configure the switch in the network to allow for communication between the different devices, all with the end goal of creating a 
+          functional <abbr title="Local Area Network">LAN</abbr>. This network configuration had to have at least 5 devices (3 PCs, 1 switch, and 1 router), and it had to be formatted in a specific way. 
+          The computers must be hooked up to the switch only, and the switch must be hooked up to the router. The PCs must be able to communicate with each other, and they must also be able to communicate with the router.
+      </p>
+      <figure>
+      <img src = "../../assets/images/ciscoPacketTracer/switchConfig/networkTopology.png" alt = "An image showing multiple devices connected together." style = "text-align: left; border: 3px solid black; max-width: 897px;">
+      <figcaption> A display of the network topology.</figcaption>
+      </figure>
+          <div class="log-container">
+          <h4 class="log-container-title">Switch Configuration Log</h4>
+          <pre>
               LAN-Switch#show run
               Building configuration...
 
@@ -204,14 +153,14 @@
               !
               !
               end
-            </pre>
-          </div>
-        <p> 
-            I did not struggle much with this project, as I had experience, albeit limited, with Cisco Packet Tracer. My professor provided us with a lot of resources to help us complete the project, 
-            including a detailed project description, a video tutorial, and a sample file with the network topology already created. I used all of these resources to complete the project. The most confusing part 
-            was likely the <abbr title="Command Line Interface">CLI</abbr> configuration. Understanding the different commands and their syntax was a bit confusing even with the resources provided by 
-            my professor. It is a trend that continued with the rest of the Cisco Packet Tracer projects, as they all had a CLI configuration component.
-        </p>
+          </pre>
+        </div>
+      <p> 
+          I did not struggle much with this project, as I had experience, albeit limited, with Cisco Packet Tracer. My professor provided us with a lot of resources to help us complete the project, 
+          including a detailed project description, a video tutorial, and a sample file with the network topology already created. I used all of these resources to complete the project. The most confusing part 
+          was likely the <abbr title="Command Line Interface">CLI</abbr> configuration. Understanding the different commands and their syntax was a bit confusing even with the resources provided by 
+          my professor. It is a trend that continued with the rest of the Cisco Packet Tracer projects, as they all had a CLI configuration component.
+      </p>
 
  <section class="downloadProjectSection">
       <h2><u>Project File(s)</u></h2>
