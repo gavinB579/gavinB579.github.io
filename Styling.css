@@ -191,31 +191,31 @@ pre
 
 /****************************************************************************************/
 
-.contact-form {
+.contactForm {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.form-group {
+.formGroup {
   display: flex;
   flex-direction: column;
 }
 
-.form-group label {
+.formGroup label {
   margin-bottom: 8px;
   font-weight: 600;
 }
 
-.form-group input,
-.form-group textarea {
+.formGroup input,
+.formGroup textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
 }
 
-.form-group textarea {
+.formGroup textarea {
   min-height: 160px;
   resize: vertical;
 }
