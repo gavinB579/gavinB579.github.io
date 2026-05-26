@@ -3,7 +3,7 @@
     <head>
       <link rel = "stylesheet" href = "/Styling.css">
       <title>
-          About
+          Contact
       </title>
     </head>
 
@@ -14,13 +14,51 @@
 
       <section>
         <h1>
-          Under Construction
+          Contact Me
+          <p>Feel free to reach out to me with questions or opportunities!</p>
         </h1>
       </section>
 
-      <p>
-        This page is under construction. It will be the Contact Page.
-      </p>
+      <form id="contactForm" class="contactForm" action="https://formspree.io/f/xbdbpaav" method="POST">
+
+        <section class="formGroup">
+          <label for="name">Name:</label><br>
+          <input 
+            type="text" 
+            id="name" 
+            name="name"
+            placeholder="Your Name"
+            required
+          >
+        </section>
+
+        <section class="formGroup">
+          <label for="email">Email:</label><br>
+          <input 
+            type="email" 
+            id="email" 
+            name="email"
+            placeholder="email@example.com"
+            required
+          >
+        </section>
+
+        <section class="formGroup">
+          <label for="message">Message:</label><br>
+          <textarea 
+            id="message" 
+            name="message" 
+            rows="4" 
+            cols="50" 
+            placeholder="Your message here..."
+            required
+          ></textarea>
+        </section>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <p class="privacyNotice"> Your information will only be used to respond to your message. </p>
     </body>
 
 </html>
