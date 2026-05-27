@@ -7,20 +7,126 @@
       </title>
     </head>
 
-    <body>  
-
-    <div id="navbar"></div>
+ <div id="navbar"></div>
     <script src="/assets/navbar/navbarJS.js"></script>
 
-      <section>
+      <section class="topOfContent">
         <h1>
-          Under Construction
+          Cisco Packet Tracer - Multiple Networks Configuration 
         </h1>
       </section>
+        
+        <p>
+          Utilizing the skills from all of my previous projects, I was able to configure multiple networks in Cisco Packet Tracer. This project involved 6 different VLANs, 2 switches, and 2 routers. Utilizing gateways, 
+          subnetting, trunking, and more, I was able to successfully configure the network so that all devices could communicate with each other. One of the new concepts of this project was modifying the routers to support 
+          serial connections and configuring the routing protocols to allow for communication between the two routers. We used default routing and static routing to achieve this. 
+        </p>
+          <figure>
+          <img src = "../../assets/images/ciscoPacketTracer/vlanConfig/networkTopology.png" alt = "An image showing multiple devices connected together." style = "text-align: left; border: 3px solid black; max-width: 897px;">
+          <figcaption> A display of the network topology.</figcaption>
+          </figure>
+           <div class="log-container">
+            <h4 class="log-container-title">LAN A Configuration Log</h4>
+            <pre>
+              LAN-A-Switch#show vlan
 
-      <p>
-        This page is under construction. It will be the Multiple Networks Configuration Page.
-      </p>
-    </body>
+              VLAN Name                             Status    Ports
+              ---- -------------------------------- --------- -------------------------------
+              1    default                          active    Gig0/1, Gig0/2
+              10   zone10                           active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
+                                                              Fa0/5, Fa0/6, Fa0/7, Fa0/8
+              20   zone20                           active    Fa0/9, Fa0/10, Fa0/11, Fa0/12
+              30   zone30                           active    Fa0/13, Fa0/14, Fa0/15, Fa0/16
+                                                              Fa0/17, Fa0/18, Fa0/19, Fa0/20
+                                                              Fa0/21, Fa0/22, Fa0/23
+              1002 fddi-default                     active    
+              1003 token-ring-default               active    
+              1004 fddinet-default                  active    
+              1005 trnet-default                    active    
 
+              VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+              ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+              1    enet  100001     1500  -      -      -        -    -        0      0
+              10   enet  100010     1500  -      -      -        -    -        0      0
+              20   enet  100020     1500  -      -      -        -    -        0      0
+              30   enet  100030     1500  -      -      -        -    -        0      0
+              1002 fddi  101002     1500  -      -      -        -    -        0      0   
+              1003 tr    101003     1500  -      -      -        -    -        0      0   
+              1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+              1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+              VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+              ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+
+              Remote SPAN VLANs
+              ------------------------------------------------------------------------------
+
+              Primary Secondary Type              Ports
+              ------- --------- ----------------- ------------------------------------------
+            </pre>
+            <br>
+            <h4 class="log-container-title">LAN B Configuration Log</h4>
+            <pre>
+             LAN-B-Switch#show vlan
+
+              VLAN Name                             Status    Ports
+              ---- -------------------------------- --------- -------------------------------
+              1    default                          active    Gig0/1, Gig0/2
+              110  zone110                          active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
+                                                              Fa0/5, Fa0/6, Fa0/7, Fa0/8
+              120  zone120                          active    Fa0/9, Fa0/10, Fa0/11, Fa0/12
+              130  zone130                          active    Fa0/13, Fa0/14, Fa0/15, Fa0/16
+                                                              Fa0/17, Fa0/18, Fa0/19, Fa0/20
+                                                              Fa0/21, Fa0/22, Fa0/23
+              1002 fddi-default                     active    
+              1003 token-ring-default               active    
+              1004 fddinet-default                  active    
+              1005 trnet-default                    active    
+
+              VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+              ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+              1    enet  100001     1500  -      -      -        -    -        0      0
+              110  enet  100110     1500  -      -      -        -    -        0      0
+              120  enet  100120     1500  -      -      -        -    -        0      0
+              130  enet  100130     1500  -      -      -        -    -        0      0
+              1002 fddi  101002     1500  -      -      -        -    -        0      0   
+              1003 tr    101003     1500  -      -      -        -    -        0      0   
+              1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+              1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+              VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+              ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+
+              Remote SPAN VLANs
+              ------------------------------------------------------------------------------
+
+              Primary Secondary Type              Ports
+              ------- --------- ----------------- ------------------------------------------
+            </pre>
+          </div>
+        <p> 
+          This project was a very difficult one for me. Trying to configure multiple networks with many different devices was a challenge. It took a lot of trial and error, research, and troubleshooting. 
+          Working with the <abbr title="Command Line Interface">CLI</abbr>'s on all devices was a very confusing and arduous task for me, and I even chose to restart the project halfway through to try and apply my research more efficiently. 
+          I learned a lot about networking and a lot of the fundamentals of how networks work, and I am happy with the final result. 
+        </p>
+
+ <section class="downloadProjectSection">
+      <h2><u>Project File(s)</u></h2>
+      <div class="splitContainer">
+        <div class="downloadProjectSectionLeft">
+         <p> 
+            This download contains a zip of my submission, including the .pkt file, and a word document with more information on my submission.
+            As a heads up, this was originally submitted as schoolwork.
+          </p>
+        </div>
+
+        <div class="downloadProjectSectionRight">
+          <a href="../../sourceCode/ciscoPacketTracer/ciscoPacketTracerMultipleNetworkConfig.zip" download="ciscoPacketTracerMultipleNetworkConfig">
+            <button class="downloadButton"> Download (.zip) </button>
+          </a>
+        </div>
+      </div>
+        
+    </section>
+  </body>
 </html>
