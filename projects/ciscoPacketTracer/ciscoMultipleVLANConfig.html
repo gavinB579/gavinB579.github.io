@@ -9,18 +9,170 @@
 
     <body>  
 
-    <div id="navbar"></div>
+<div id="navbar"></div>
     <script src="/assets/navbar/navbarJS.js"></script>
 
-      <section>
-        <h1>
-          Under Construction
-        </h1>
-      </section>
-
+    <section class="topOfContent">
+      <h1>
+        Cisco Packet Tracer - Multiple VLANs Configuration 
+      </h1>
+    </section>
+        
       <p>
-        This page is under construction. It will be the Multiple VLAN Configuration Page.
+          The focus of this submission was to configure multiple <abbr title="Virtual Local Area Network">VLAN</abbr>s on a network topology. I utilized a lot of the skills from my previous submissions, and built onto it.
+          I had to create multiple VLANs, all connected to the switch directly. The computers in each VLAN had to be able to connect locally, but not to computers in other VLANs. We also had to verify that the router can 
+          ping all of the computers, regardless of the VLAN they were apart of. To accomplish this, I had to utilize trunk ports, VLAN tagging, subnetting, and more.
       </p>
-    </body>
+      <figure>
+      <img src = "../../assets/images/ciscoPacketTracer/multipleVLANConfig/networkTopology.png" alt = "An image showing multiple devices connected together." style = "text-align: left; border: 3px solid black; max-width: 897px;">
+      <figcaption> A display of the network topology.</figcaption>
+      </figure>
+          <div class="log-container">
+          <h4 class="log-container-title">Switch Configuration Log</h4>
+          <pre>
+            Switch#show run
+            Building configuration...
 
+            Current configuration : 1150 bytes
+            !
+            version 12.2(37)SE1
+            no service timestamps log datetime msec
+            no service timestamps debug datetime msec
+            no service password-encryption
+            !
+            hostname Switch
+            !
+            !
+            no profinet
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            spanning-tree mode pvst
+            !
+            !
+            !
+            !
+            !
+            !
+            interface FastEthernet0/1
+            !
+            interface FastEthernet0/2
+            !
+            interface FastEthernet0/3
+            !
+            interface FastEthernet0/4
+            !
+            interface FastEthernet0/5
+            !
+            interface FastEthernet0/6
+            !
+            interface FastEthernet0/7
+            !
+            interface FastEthernet0/8
+            !
+            interface FastEthernet0/9
+            !
+            interface FastEthernet0/10
+            !
+            interface FastEthernet0/11
+            !
+            interface FastEthernet0/12
+            !
+            interface FastEthernet0/13
+            !
+            interface FastEthernet0/14
+            !
+            interface FastEthernet0/15
+            !
+            interface FastEthernet0/16
+            !
+            interface FastEthernet0/17
+            !
+            interface FastEthernet0/18
+            !
+            interface FastEthernet0/19
+            !
+            interface FastEthernet0/20
+            !
+            interface FastEthernet0/21
+            !
+            interface FastEthernet0/22
+            !
+            interface FastEthernet0/23
+            !
+            interface FastEthernet0/24
+            !
+            interface GigabitEthernet0/1
+            !
+            interface GigabitEthernet0/2
+            !
+            interface Vlan1
+            no ip address
+            shutdown
+            !
+            ip classless
+            !
+            ip flow-export version 9
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            !
+            line con 0
+            !
+            line aux 0
+            !
+            line vty 0 4
+            login
+            !
+            !
+            !
+            !
+            end
+          </pre>
+        </div>
+      <p> 
+          Making the network topology and configuring the devices was a fun, albeit challenging, experience. Making the devices connect locally but not between VLANs, all while the router can ping all of the devices, 
+          was a difficult task, but I am happy with how it turned out. Like the other projects, I had help from my professor, but I still had to do a lot of my own research and problem solving, referencing notes and previous 
+          projects to get everything working. 
+      </p>
+
+ <section class="downloadProjectSection">
+      <h2><u>Project File(s)</u></h2>
+      <div class="splitContainer">
+        <div class="downloadProjectSectionLeft">
+         <p> 
+            This download contains a zip of my submission, including the .pkt file, and a word document with more information on my submission.
+            As a heads up, this was originally submitted as schoolwork.
+          </p>
+        </div>
+
+        <div class="downloadProjectSectionRight">
+          <a href="../../sourceCode/ciscoPacketTracer/ciscoPacketTracerMultipleVLANConfig.zip" download="ciscoPacketTracerMultipleVLANConfig">
+            <button class="downloadButton"> Download (.zip) </button>
+          </a>
+        </div>
+      </div>
+        
+    </section>
+  </body>
 </html>

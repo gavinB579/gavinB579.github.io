@@ -118,6 +118,7 @@ button
     font-family: inherit;
     cursor: pointer;
     transition: border-color 0.25s;
+    width: 150px;
 }
 
 button:hover
@@ -235,6 +236,7 @@ pre
   border-radius: 8px;
   font-size: 1rem;
   max-width: 400px;
+  justify-content: center;
 }
 
 .formGroup textarea {
