@@ -223,6 +223,7 @@ pre
 .formGroup {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .formGroup label {
@@ -236,7 +237,7 @@ pre
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
-  max-width: 400px;
+  max-width: 800px;
   justify-content: center;
 }
 

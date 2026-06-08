@@ -12,15 +12,240 @@
     <div id="navbar"></div>
     <script src="/assets/navbar/navbarJS.js"></script>
 
-      <section>
+      <section class="topOfContent">
         <h1>
-          Under Construction
+          Cisco Packet Tracer - IPv6 Configuration 
         </h1>
       </section>
+        
+        <p>
+          This project was more about learning IPv6 than it was about learning how to use Cisco Packet Tracer. It utilized, to a lesser extend, the topology design skills seen in my previous projects, 
+          but focused more on the configuration aspects. Using two routers, two switches, and two PC's connected on their own separate networks, I had to learn how to configure IPv6 addresses on the devices. 
+          Success for this project was measured by the ability of the two routers to communicate with each other, verified via pinging.
+        </p>
+          <figure>
+          <img src = "../../assets/images/ciscoPacketTracer/ipv6Config/networkTopology.png" alt = "An image showing multiple devices connected together." style = "text-align: left; border: 3px solid black; max-width: 897px;">
+          <figcaption> A display of the network topology.</figcaption>
+          </figure>
+           <div class="log-container">
+            <h4 class="log-container-title">Router 1 Configuration Log</h4>
+            <pre>
+              R1#show running-config
+              Building configuration...
 
-      <p>
-        This page is under construction. It will be the IPv6 Configuration Page.
-      </p>
+              Current configuration : 818 bytes
+              !
+              version 15.1
+              no service timestamps log datetime msec
+              no service timestamps debug datetime msec
+              no service password-encryption
+              !
+              hostname R1
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              no ip cef
+              ipv6 unicast-routing
+              !
+              no ipv6 cef
+              !
+              !
+              !
+              !
+              license udi pid CISCO2811/K9 sn FTX1017ZK0S-
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              spanning-tree mode pvst
+              !
+              !
+              !
+              !
+              !
+              !
+              interface FastEthernet0/0
+              no ip address
+              duplex auto
+              speed auto
+              ipv6 address 2001:C16C:0:2::/64 eui-64
+              !
+              interface FastEthernet0/1
+              no ip address
+              duplex auto
+              speed auto
+              shutdown
+              !
+              interface Serial0/0/0
+              no ip address
+              ipv6 address 2001:C16C:0:1::1/64
+              clock rate 64000
+              !
+              interface Serial0/0/1
+              no ip address
+              clock rate 2000000
+              shutdown
+              !
+              interface Vlan1
+              no ip address
+              shutdown
+              !
+              ip classless
+              !
+              ip flow-export version 9
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              line con 0
+              !
+              line aux 0
+              !
+              line vty 0 4
+              login
+              !
+              !
+              !
+              end
+            </pre>
+            <br>
+            <h4 class="log-container-title">Router 2 Configuration Log</h4>
+            <pre>
+              R2#show running-config
+              Building configuration...
+
+              Current configuration : 777 bytes
+              !
+              version 15.1
+              no service timestamps log datetime msec
+              no service timestamps debug datetime msec
+              no service password-encryption
+              !
+              hostname R2
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              no ip cef
+              no ipv6 cef
+              !
+              !
+              !
+              !
+              license udi pid CISCO2811/K9 sn FTX10174338-
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              spanning-tree mode pvst
+              !
+              !
+              !
+              !
+              !
+              !
+              interface FastEthernet0/0
+              no ip address
+              duplex auto
+              speed auto
+              ipv6 address 2001:C16C:0:3::/64 eui-64
+              !
+              interface FastEthernet0/1
+              no ip address
+              duplex auto
+              speed auto
+              shutdown
+              !
+              interface Serial0/0/0
+              no ip address
+              clock rate 2000000
+              shutdown
+              !
+              interface Serial0/0/1
+              no ip address
+              ipv6 address 2001:C16C:0:1::2/64
+              !
+              interface Vlan1
+              no ip address
+              shutdown
+              !
+              ip classless
+              !
+              ip flow-export version 9
+              !
+              !
+              !
+              !
+              !
+              !
+              !
+              line con 0
+              !
+              line aux 0
+              !
+              line vty 0 4
+              login
+              !
+              !
+              !
+              end
+            </pre>
+          </div>
+        <p> 
+          I did not struggle too much with this project. There were parts that were difficult to apply, as our professor stepped away from guiding us through the project and let us apply our knowledge. 
+          These parts were mainly the configuration of the device settings and not so much the design of the topology or applying IPv6 functionality. I had to go through trial and error to get the configuration right, 
+          but in the end it was not too difficult to get the devices communicating with each other. The IPv6 aspect of this project was simple in nature and not too difficult to understand, 
+          as we were actively learning about IPv6 in my networking class and the requirements were simple.
+        </p>
+
+ <section class="downloadProjectSection">
+      <h2><u>Project File(s)</u></h2>
+      <div class="splitContainer">
+        <div class="downloadProjectSectionLeft">
+         <p> 
+            This download contains a zip of my submission, including the .pkt file, and a word document with more information on my submission.
+            As a heads up, this was originally submitted as schoolwork.
+          </p>
+        </div>
+
+        <div class="downloadProjectSectionRight">
+          <a href="../../sourceCode/ciscoPacketTracer/ciscoPacketTracerIPv6Config.zip" download="ciscoPacketTracerIPv6Config">
+            <button class="downloadButton"> Download (.zip) </button>
+          </a>
+        </div>
+      </div>
+        
+    </section>
     </body>
 
 </html>
