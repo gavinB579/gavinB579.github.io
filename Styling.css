@@ -225,6 +225,10 @@ pre
   align-items: center;
 }
 
+.formGroup button {
+    align-items: center;
+}
+
 .formGroup label {
   margin-bottom: 8px;
   font-weight: 600;
