@@ -217,13 +217,12 @@ pre
   display: flex;
   flex-direction: column;
   gap: 20px;
-  justify-content: center;
 }
 
 .formGroup {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .formGroup label {
