@@ -245,3 +245,8 @@ pre
   min-height: 160px;
   resize: vertical;
 }
+
+.privacyNotice {
+  font-size: 0.9rem;
+  color: #555;
+}
